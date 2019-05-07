@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import LoginContainer from './login-container.js'
 import RegisterContainer from './register-box.js'
 
+//Component's CSS Section
+
 const LoginNewUserContainerDivStyle = {
   float: "right",
   width: "50%",

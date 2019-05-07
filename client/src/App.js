@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import InitialUserActionsContainer from './app/splash-page/containers/login-and-new-user-container' //Rename File
+import InitialUserActionsContainer from './app/splash-page/containers/initial-user-actions-container' //Rename File
 import TitleComponent from './app/splash-page/components/title-component'
 
 function App() {
