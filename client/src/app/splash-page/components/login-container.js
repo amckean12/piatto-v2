@@ -17,10 +17,14 @@ class LoginContainer extends Component {
     })
   }
 
+  handleSubmit(event){
+    event.preventDefault();
+  }
+
   render(){
     return(
       <div className="LoginContainer">
-        <form className="LoginForm">
+        <form className="LoginForm" onSubmit={(event) => this.handleSubmit(event)}>
           <h1>Login</h1>
           <label>Username</label>
             <input type="text" className="LoginFormInput" name="username" onChange={(event) => this.handleChange(event)} value={this.state.username}/><br/>

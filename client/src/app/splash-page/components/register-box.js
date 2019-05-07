@@ -20,11 +20,16 @@ class RegisterContainer extends Component {
       [event.target.name]: event.target.value
     })
   }
-  
+
+  handleSubmit(event){
+    event.preventDefault();
+  }
+
+
   render(){
     return(
       <div className="RegisterContainer">
-        <form className="RegisterForm">
+        <form className="RegisterForm" onSubmit={(event) => this.handleSubmit(event)}>
         <h1>New User</h1>
         <label>First Name</label>
           <input type="text" className="RegisterInput" name="firstName" onChange={(event) => this.handleChange(event)} value={this.state.firstName}/><br/>
