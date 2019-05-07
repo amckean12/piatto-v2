@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const TitleContainer = {
   width: "50%",
   float: "left",
   position: "relative",
-  "min-height": "100%",
+  height: "100%",
   textAlign: "center"
 }
 

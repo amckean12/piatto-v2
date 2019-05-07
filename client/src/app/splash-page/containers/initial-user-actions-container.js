@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import LoginContainer from './login-container.js'
-import RegisterContainer from './register-box.js'
+import LoginContainer from '../components/login-container.js'
+import RegisterContainer from '../components/register-box.js'
 
 //Component's CSS Section
 
