@@ -6,8 +6,8 @@ class LoginContainer extends Component {
     return(
       <div className="LoginContainer">
         <form className="LoginForm">
-          <input type="text" className="LoginFormInput"/>
-          <input type="password" className="LoginFormInput"/>
+          <input type="text" className="LoginFormInput"/><br/>
+          <input type="password" className="LoginFormInput"/><br/>
           <input type="submit" value="Login" />
         </form>
       </div>
