@@ -37,11 +37,12 @@ class InitialUserActionsContainer extends Component {
       <div className="LoginNewUserContainer" style={LoginNewUserContainerDivStyle}>
       <button className={"controller " + (this.state.isLoginOpen ? "selected-controller": "")} onClick={this.showLoginBox.bind(this)}>Login</button>
       <button className={"controller " + (this.state.isRegisterOpen ? "selected-controller": "")} onClick={this.showRegisterBox.bind(this)}>Register</button>
-        {this.state.isLoginOpen && <LoginContainer />}
+        {this.state.isLoginOpen && <LoginContainer loginUser={this.props.loginUser}/>}
         {this.state.isRegisterOpen && <RegisterContainer />}
       </div>
     )
   }
 }
 
-export default InitialUserActionsContainer;
+
+export default InitialUserActionsContainer
