@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 //Start or React Component
 class LoginContainer extends Component {
   state = {
-    username: "",
+    email: "",
     password: ""
   }
 
@@ -26,8 +26,8 @@ class LoginContainer extends Component {
       <div className="LoginContainer">
         <form className="LoginForm" onSubmit={(event) => this.handleSubmit(event)}>
           <h1>Login</h1>
-          <label>Username</label>
-            <input type="text" className="LoginFormInput" name="username" onChange={(event) => this.handleChange(event)} value={this.state.username}/><br/>
+          <label>Email</label>
+            <input type="text" className="LoginFormInput" name="email" onChange={(event) => this.handleChange(event)} value={this.state.email}/><br/>
           <label>Password</label>
             <input type="password" className="LoginFormInput" name="password" onChange={(event) => this.handleChange(event)} value={this.state.password}/><br/>
             <input type="submit" value="Login" /><br/>

@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import LoginContainer from '../components/login-container.js'
 import RegisterContainer from '../components/register-box.js'
+
 
 //Component's CSS Section
 
